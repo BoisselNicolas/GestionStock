@@ -116,7 +116,7 @@ namespace GestionStock
                             int quantiteToAdd = Convert.ToInt32(Console.ReadLine());
                             produit.AddQuantite(quantiteToAdd);
                             }
-                            catch (NegativeNumberException e)
+                            catch (NegativeNumberException)
                             {
                                 Console.WriteLine("Impossible d'ajouter un nombre négatif");
                             }
@@ -152,8 +152,7 @@ namespace GestionStock
             }
             catch (ProductDoesntExistException e)
             {
-                Console.WriteLine(e.ToString());
-                throw e;
+                Console.WriteLine("Le produit que vous voulez supprimé n'existe pas ");
             }
 
         }
