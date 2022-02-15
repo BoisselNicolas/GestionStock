@@ -1,9 +1,9 @@
 <img src="https://blog.bracketshow.com/wp-content/uploads/2021/07/csharp.png" width="100px">
 
-# Pendu en C++
+# Gestion de stock basique en C#
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]()
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 
 [![Generic badge](https://img.shields.io/badge/For-Training-<green>.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Only-Terminal-<green>.svg)](https://shields.io/)
