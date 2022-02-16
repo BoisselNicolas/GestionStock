@@ -23,7 +23,7 @@ namespace GestionStockTest
         {
             Product p = new Product();
 
-            int expected = 11;
+            int expected = 10;
             int actual = p.quantite;
 
             Assert.AreEqual(expected, actual);
