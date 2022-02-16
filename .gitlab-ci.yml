@@ -27,7 +27,7 @@ UnitTests:
   allow_failure: false
 
 
-sonarqube-check:
+sonarqube:
   stage : Test
   script: 
       - "apt-get update"
