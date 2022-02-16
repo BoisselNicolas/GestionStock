@@ -12,4 +12,4 @@ tests:
   stage: test
   script:
     - 'cd ../GestionStockTest'
-    - 'dotnet test --no-restore'
+    - 'dotnet test'
