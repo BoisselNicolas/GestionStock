@@ -1,44 +1,64 @@
-image: mcr.microsoft.com/dotnet/sdk:3.1
+# image: mcr.microsoft.com/dotnet/sdk:3.1
 
-before_script:
-  - 'dotnet restore GestionStock'
-  - 'dotnet restore GestionStockTest'
+# before_script:
+#   - 'dotnet restore GestionStock'
+#   - 'dotnet restore GestionStockTest'
 
-stages:
-    - Build
-    - Test
+# stages:
+#     - Build
+#     - Test
 
-GestionStock:
-  stage: Build
-  script:
-    - 'dotnet build --no-restore GestionStock'
-  allow_failure: false
+# GestionStock:
+#   stage: Build
+#   script:
+#     - 'dotnet build --no-restore GestionStock'
+#   allow_failure: false
 
-GestionStockTest:
-  stage: Build
-  script:
-    - 'dotnet build --no-restore GestionStockTest'
-  allow_failure: false
+# GestionStockTest:
+#   stage: Build
+#   script:
+#     - 'dotnet build --no-restore GestionStockTest'
+#   allow_failure: false
 
-UnitTests:
-  stage: Test
-  script:
-    - 'dotnet test --no-restore GestionStockTest'
-  allow_failure: false
+# UnitTests:
+#   stage: Test
+#   script:
+#     - 'dotnet test --no-restore GestionStockTest'
+#   allow_failure: false
 
 
-sonarqube:
-  stage : Test
+# sonarqube:
+#   stage : Test
+#   script: 
+#       - "apt-get update"
+#       - "apt-get install --yes openjdk-11-jre"
+#       - "dotnet tool install --global dotnet-sonarscanner"
+#       - "export PATH=\"$PATH:$HOME/.dotnet/tools\""
+#       - "dotnet sonarscanner begin /k:\"BoisselNicolas_gestionstock_AX8C6T9s-GG3rbcPP0QT\" /d:sonar.login=\"$SONAR_TOKEN\" /d:\"sonar.host.url=http://0.0.0.0:9000\" "
+#       - "dotnet build"
+#       - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
+#   allow_failure: true
+#   only:
+#     - master # or the name of your main branch
+
+
+sonarqube-check:
+  image: mcr.microsoft.com/dotnet/core/sdk:latest
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
   script: 
       - "apt-get update"
       - "apt-get install --yes openjdk-11-jre"
       - "dotnet tool install --global dotnet-sonarscanner"
       - "export PATH=\"$PATH:$HOME/.dotnet/tools\""
-      - "dotnet sonarscanner begin /k:\"BoisselNicolas_gestionstock_AX8C6T9s-GG3rbcPP0QT\" /d:sonar.login=\"$SONAR_TOKEN\" /d:\"sonar.host.url=http://0.0.0.0:9000\" "
+      - "dotnet sonarscanner begin /k:\"BoisselNicolas_gestionstock_AX8C6T9s-GG3rbcPP0QT\" /d:sonar.login=\"$SONAR_TOKEN\" /d:\"sonar.host.url=$SONAR_HOST_URL\" "
       - "dotnet build"
-      - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
+      - "dotnet sonarscanner end /d:sonar.login=\"$SONAR_TOKEN\""
   allow_failure: true
   only:
-    - master # or the name of your main branch
-
-
+    - main # or the name of your main branch
