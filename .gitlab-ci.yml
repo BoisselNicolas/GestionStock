@@ -1,15 +1,14 @@
 image: mcr.microsoft.com/dotnet/sdk:latest
 
-before_script:
-  - 'cd GestionStock'
-
 build:
   stage: build
   script:
+    - 'cd GestionStock'
+    - 'dotnet build'
+    - 'cd ../GestionStockTest'
     - 'dotnet build'
 
 tests:
   stage: test
   script:
-    - 'cd ../GestionStockTest'
     - 'dotnet test'
