@@ -28,6 +28,7 @@ UnitTests:
 
 
 sonarqube-check:
+  stage : Test
   script: 
       - "apt-get update"
       - "apt-get install --yes openjdk-11-jre"
@@ -38,4 +39,6 @@ sonarqube-check:
       - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
   allow_failure: true
   only:
-    - main # or the name of your main branch
+    - master # or the name of your main branch
+
+
