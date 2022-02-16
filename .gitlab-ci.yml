@@ -1,5 +1,9 @@
 image: mcr.microsoft.com/dotnet/sdk:latest
 
+before_script:
+  - 'dotnet restore GestionStock'
+  - 'dotnet restore GestionStockTest'
+
 stages:
     - Build
     - Test
@@ -7,14 +11,17 @@ stages:
 GestionStock:
   stage: Build
   script:
-    - 'dotnet build GestionStock'
+    - 'dotnet build --no-restore GestionStock'
+  allow_failure: false
 
 GestionStockTest:
   stage: Build
   script:
-    - 'dotnet build GestionStockTest'
+    - 'dotnet build --no-restore GestionStockTest'
+  allow_failure: false
 
 UnitTests:
   stage: Test
   script:
-    - 'dotnet test GestionStockTest'
+    - 'dotnet test --no-restore GestionStockTest'
+  allow_failure: false
