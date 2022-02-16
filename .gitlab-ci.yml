@@ -28,10 +28,7 @@ UnitTests:
 
 
 sonarqube-check:
-  stage: Test
-  image:
-    name: sonarsource/sonar-scanner-cli:latest
-    entrypoint: [""]
+  image: mcr.microsoft.com/dotnet/core/sdk:latest
   variables:
     SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
     GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
@@ -39,10 +36,14 @@ sonarqube-check:
     key: "${CI_JOB_NAME}"
     paths:
       - .sonar/cache
-  script:
-    - sonar-scanner -Dsonar.qualitygate.wait=true -Dsonar.projectKey=vitejs-sample -Dsonar.sources=. -Dsonar.host.url=0.0.0.0:9000 -Dsonar.login=b8d98ef101d0c51fb6b108f3cd19f2a640968de3
+  script: 
+      - "apt-get update"
+      - "apt-get install --yes openjdk-11-jre"
+      - "dotnet tool install --global dotnet-sonarscanner"
+      - "export PATH=\"$PATH:$HOME/.dotnet/tools\""
+      - "dotnet sonarscanner begin /k:\"BoisselNicolas_gestionstock_AX8C6T9s-GG3rbcPP0QT\" /d:sonar.login=\"$SONAR_TOKEN\" /d:\"sonar.host.url=http://0.0.0.0:9000\" "
+      - "dotnet build"
+      - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
   allow_failure: true
   only:
-    - master
-
-
+    - master # or the name of your main branch
