@@ -1,4 +1,3 @@
-/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.csprojAssemblyReference.cache
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.AssemblyInfoInputs.cache
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.AssemblyInfo.cs
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.csproj.CoreCompileInputs.cache
@@ -95,3 +94,8 @@
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.dll
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.pdb
 /home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.genruntimeconfig.cache
+/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/bin/Debug/netcoreapp3.1/GestionStock.deps.json
+/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/bin/Debug/netcoreapp3.1/GestionStock.runtimeconfig.json
+/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/bin/Debug/netcoreapp3.1/GestionStock.runtimeconfig.dev.json
+/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.csproj.AssemblyReference.cache
+/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/Debug/netcoreapp3.1/GestionStockTest.GeneratedMSBuildEditorConfig.editorconfig

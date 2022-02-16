@@ -150,11 +150,10 @@ namespace GestionStock
                     Console.WriteLine("Produit supprimé");
                 }
             }
-            catch (ProductDoesntExistException e)
+            catch (ProductDoesntExistException)
             {
                 Console.WriteLine("Le produit que vous voulez supprimé n'existe pas ");
             }
-
         }
     }
 }

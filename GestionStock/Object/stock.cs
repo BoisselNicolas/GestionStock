@@ -2,7 +2,6 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using GestionStock.Utils;
-using GestionStock.Error;
 
 namespace GestionStock.Object
 {
@@ -39,9 +38,5 @@ namespace GestionStock.Object
             var ProductToUpdate = this.ListProduct.FirstOrDefault(x => x.nom == nom);
             return ProductToUpdate;
         }
-
-
-        
-
     }
 }
