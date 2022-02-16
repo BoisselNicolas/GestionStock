@@ -46,4 +46,4 @@ sonarqube-check:
       - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
   allow_failure: true
   only:
-    - master # or the name of your main branch
+    - main # or the name of your main branch
