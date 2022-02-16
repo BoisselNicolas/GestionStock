@@ -13,7 +13,7 @@
 ## Installation
 
 ```
-$ git@github.com:BoisselNicolas/GestionStock.git
+$ git clone git@github.com:BoisselNicolas/GestionStock.git
 ```
 
 ## Compilation
