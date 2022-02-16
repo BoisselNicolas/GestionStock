@@ -97,7 +97,8 @@ build:
   # where it is located (e.g. 'dotnet build ./src/ConsoleApp').
   # Only one project path can be passed as a parameter to 'dotnet build' command.
   script:
-    - 'dotnet build --no-restore'
+    - 'cd GestionStock'
+    - 'dotnet build'
 
 tests:
   stage: test
