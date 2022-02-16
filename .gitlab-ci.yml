@@ -5,12 +5,12 @@ stages:
     - Test
 
 GestionStock:
-  stage: build
+  stage: Build
   script:
     - 'dotnet build GestionStock'
 
 GestionStockTest:
-  stage: build
+  stage: Build
   script:
     - 'dotnet build GestionStockTest'
 
