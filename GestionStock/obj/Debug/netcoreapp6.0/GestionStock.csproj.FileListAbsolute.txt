@@ -1,0 +1,15 @@
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/GestionStock
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/GestionStock.deps.json
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/GestionStock.runtimeconfig.json
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/GestionStock.dll
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/ref/GestionStock.dll
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/bin/Debug/netcoreapp6.0/GestionStock.pdb
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.csproj.AssemblyReference.cache
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.AssemblyInfoInputs.cache
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.AssemblyInfo.cs
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.csproj.CoreCompileInputs.cache
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.dll
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/ref/GestionStock.dll
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.pdb
+/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/Debug/netcoreapp6.0/GestionStock.genruntimeconfig.cache

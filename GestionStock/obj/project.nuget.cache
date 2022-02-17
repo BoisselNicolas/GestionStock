@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zQfN9DINImQd1DGW1QRIG39hZP575ctehzn+hwYkqf8/OlaYFHTNTEJvgrgYioR0SfHs3vszsoHw1U0lnFU52Q==",
+  "dgSpecHash": "rnswY3zr/KUajkFwDROEyTNJzQRuyFDVMhe+3s28KK8ttJllWOcp/lP18Q+744FV/4hua8cekMFNvNDQulWIgw==",
   "success": true,
-  "projectFilePath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
+  "expectedPackageFiles": [
+    "/home/sakolinsb/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

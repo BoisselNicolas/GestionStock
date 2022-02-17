@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {}
+    "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {}
   },
   "projects": {
-    "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {
+    "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
+        "projectUniqueName": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
         "projectName": "GestionStock",
-        "projectPath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
-        "packagesPath": "/home/nicolas/.nuget/packages/",
-        "outputPath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/obj/",
+        "projectPath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj",
+        "packagesPath": "/home/sakolinsb/.nuget/packages/",
+        "outputPath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nicolas/.nuget/NuGet/NuGet.Config"
+          "/home/sakolinsb/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "netcoreapp6.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "netcoreapp6.0",
           "imports": [
             "net461",
             "net462",
@@ -47,12 +47,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

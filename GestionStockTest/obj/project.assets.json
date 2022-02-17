@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net6.0": {
       "coverlet.collector/1.2.0": {
         "type": "package",
         "build": {
@@ -1637,7 +1637,7 @@
       },
       "GestionStock/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/GestionStock.dll": {}
         },
@@ -5723,7 +5723,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net6.0": [
       "GestionStock >= 1.0.0",
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
@@ -5732,32 +5732,32 @@
     ]
   },
   "packageFolders": {
-    "/home/nicolas/.nuget/packages/": {}
+    "/home/sakolinsb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/GestionStockTest.csproj",
+      "projectUniqueName": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStockTest/GestionStockTest.csproj",
       "projectName": "GestionStockTest",
-      "projectPath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/GestionStockTest.csproj",
-      "packagesPath": "/home/nicolas/.nuget/packages/",
-      "outputPath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStockTest/obj/",
+      "projectPath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStockTest/GestionStockTest.csproj",
+      "packagesPath": "/home/sakolinsb/.nuget/packages/",
+      "outputPath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStockTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/nicolas/.nuget/NuGet/NuGet.Config"
+        "/home/sakolinsb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "netcoreapp6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "netcoreapp6.0",
           "projectReferences": {
-            "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {
-              "projectPath": "/home/nicolas/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj"
+            "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj": {
+              "projectPath": "/run/media/sakolinsb/DATA/Dev/MAALSI/GestionStock/GestionStock/GestionStock.csproj"
             }
           }
         }
@@ -5769,8 +5769,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": "netcoreapp6.0",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -5799,12 +5799,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.0, 6.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
