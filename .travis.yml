@@ -1,6 +1,7 @@
-image: mcr.microsoft.com/dotnet/sdk:6.0
-
-before_script:
+language: csharp
+mono: none
+dotnet: 6.0
+script:
   - 'dotnet restore GestionStock'
   - 'dotnet restore GestionStockTest'
 
