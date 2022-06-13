@@ -1,4 +1,4 @@
-<img src="[https://blog.bracketshow.com/wp-content/uploads/2021/07/csharp.png](https://content.axopen.com/uploads/1200px_C_Sharp_logo_svg_16fb904a2f.png)]" width="100px">
+<img src="https://lesdieuxducode.com/images/blog/remyfricou@expaceo0onmicrosoftcom/csharp.jpg" width="100px">
 
 # Gestion de stock basique en C#
 
