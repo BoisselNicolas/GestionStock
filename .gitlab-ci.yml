@@ -40,25 +40,3 @@ sonarqube:
   allow_failure: true
   only:
     - master # or the name of your main branch
-
-
-# sonarqube-check:
-#   image: mcr.microsoft.com/dotnet/core/sdk:3.1
-#   variables:
-#     SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
-#     GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
-#   cache:
-#     key: "${CI_JOB_NAME}"
-#     paths:
-#       - .sonar/cache
-#   script: 
-#       - "apt-get update"
-#       - "apt-get install --yes openjdk-11-jre"
-#       - "dotnet tool install --global dotnet-sonarscanner"
-#       - "export PATH=\"$PATH:$HOME/.dotnet/tools\""
-#       - "dotnet sonarscanner begin /k:\"BoisselNicolas_gestionstock_AX8C6T9s-GG3rbcPP0QT\" /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\" /d:\"sonar.host.url=http://90.16.231.229:9000\" "
-#       - "dotnet build GestionStock"
-#       - "dotnet sonarscanner end /d:sonar.login=\"dfc7243c000f5ab803606d4207012ef793220e10\""
-#   allow_failure: true
-#   only:
-#     - main # or the name of your main branch
